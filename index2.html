@@ -10,39 +10,8 @@
 </head>
 <body>
   <h1 class="gallery_title">Галерея</h1>
-  
-    
       <div onMouseOver="btn_show()" onMouseOut="btn_noshow()" class="wrapper">
-        <script type="text/javascript">  
-          var imageArray = [
-            "photo1.jpg",	
-            "comment1.jpg",		
-            "comment2.jpg",
-            "comment3.jpg",		
-            "photo2.JPG",
-            "photo3.jpg",
-            "photo4.jpg"
-          ];
-          window.number = '0';
-          var imageCount = imageArray.length;		
-          function image(num){				
-            if(num == 1){
-              if(number < imageCount - 1){						
-                number++;
-                document.getElementById('images').src = imageArray[number];
-                document.getElementById('num_img').innerHTML= number + 1 + '/' + imageCount;
-              }
-            }					 
-            else{
-              if(number > 0){						
-                number--;
-                document.getElementById('images').src = imageArray[number];
-                document.getElementById('num_img').innerHTML= number + 1 + '/' + imageCount;
-              }
-            }
-          }				
-          document.write('<img id="images" src="' + imageArray[0] + '">');
-        </script>
+        <script src="script.js"></script>
       </div>
       <div class ="wrapper">
         <center><p style="font-size: 18px; color: lemonchiffon;font-weight: bold;" id="num_img"></p></center>
