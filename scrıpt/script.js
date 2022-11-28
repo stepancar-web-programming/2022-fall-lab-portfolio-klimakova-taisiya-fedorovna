@@ -1,11 +1,11 @@
 const imageArray = [
-  'photo1.jpg',
-  'comment1.jpg',
-  'comment2.jpg',
-  'comment3.jpg',
-  'photo2.JPG',
-  'photo3.jpg',
-  'photo4.jpg',
+  '../media/photo1.jpg',
+  '../media/comment1.jpg',
+  '../media/comment2.jpg',
+  '../media/comment3.jpg',
+  '../media/photo2.JPG',
+  '../media/photo3.jpg',
+  '../media/photo4.jpg',
 ];
 window.number = '0';
 const imageCount = imageArray.length;
