@@ -138,7 +138,6 @@ img#images {
 
 video {
   max-width: 800px;
-  width: fit-content;
   display: inline-block;
   border: 6px solid palevioletred;
   margin-bottom: 20px;
@@ -161,4 +160,10 @@ video {
 .call_me {
   font-family: Luminari;
   color: #fe9f40;
+}
+
+.numbers {
+  font-size: 18px; 
+  color: lemonchiffon;
+  font-weight: bold;
 }
