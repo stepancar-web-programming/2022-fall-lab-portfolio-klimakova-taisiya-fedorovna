@@ -156,3 +156,9 @@ video {
   justify-content: center;
   align-items: center;
 }
+
+.email,
+.call_me {
+  font-family: Luminari;
+  color: #fe9f40;
+}
