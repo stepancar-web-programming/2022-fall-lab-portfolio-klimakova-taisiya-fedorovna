@@ -1,2 +1,3 @@
 Лабораторная работа по дисциплине "Разработка веб-приложений"
-https://legendary-heliotrope-6ec7bf.netlify.app
+1 вариант: https://legendary-heliotrope-6ec7bf.netlify.app
+2 вариант(еще без адапт): https://mellow-malasada-19ed6b.netlify.app/index.html
