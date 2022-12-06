@@ -55,9 +55,7 @@ h3 {
   padding: 0 15px;
 }
 
-.hero__container,
-.myself,
-.education_title {
+.hero__container {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -124,6 +122,49 @@ h3 {
   }
 }
 
+.something_me {
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 300;
+  color: whitesmoke;
+  font-family: Luminari;
+}
+
+.myself {
+  margin-right: 150px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education, .hobby {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+}
+
+.myself_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education_title,
+.hobby_title,
+.learners {
+  font-size: 27px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: palevioletred;
+  font-family: Trattatello;
+}
+
 .hobby_list {
   margin-left: 0;
   list-style: none;
@@ -141,7 +182,7 @@ h3 {
   background: linear-gradient(to right, rgb(254 250 221) 70%, palevioletred 100%);
   border-bottom-right-radius: 70em;
   border-top-right-radius: 70em;
-}
+} 
 
 .hobby_list li::before {
   padding: 10px;
@@ -160,52 +201,23 @@ h3 {
   content: counter(li);
 }
 
-.something_me {
-  width: 100%;
-  padding: 15px 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.tutoring {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.tutoring_about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: 34px;
-  font-weight: 300;
-  color: whitesmoke;
-  font-family: Luminari;
-}
-
-.education_title,
-.hobby_title,
-.learners {
-  font-size: 27px;
-  line-height: 1.1;
-  margin-bottom: 40px;
-  color: palevioletred;
-  font-family: Trattatello;
-}
-
-.myself {
-  display: flex;
-  flex-direction: row;
-}
-
-.education {
-  flex: 1;
-  margin-right: 60px;
-}
-
-.hobby {
-  flex: 1;
-  margin-right: 60px;
-}
+} 
 
 .length {
   border: 3px solid palevioletred;
-  padding: 2px;
-  margin-right: 60px;
-  margin-left: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 40px;
-  position: relative;
   background: linear-gradient(to left, #f8ab8d 0%, white, #f8ab8d);
   background: rgb(254 250 221);
   border-radius: 70em;
@@ -214,13 +226,13 @@ h3 {
 .achievements {
   list-style: none;
   padding: 0;
+  display:grid;
+  justify-content:center;
+  grid-template-columns: repeat(1, minmax(350px, 470px));
 }
 
 .achievements li {
-  position: relative;
   padding: 10px;
-  margin-right: 350px;
-  margin-left: 350px;
   background: linear-gradient(to right, #d87093 0%, #fefadd 20%, #fefadd 80%, #d87093 100%);
   border-radius: 70em;
   margin-bottom: 20px;
