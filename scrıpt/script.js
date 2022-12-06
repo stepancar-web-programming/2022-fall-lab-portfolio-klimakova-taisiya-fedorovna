@@ -7,7 +7,9 @@ const imageArray = [
   '../media/photo3.jpg',
   '../media/photo4.jpg',
 ];
-window.number = '0';
+(function() {
+  window.number = '0';
+}());
 const imageCount = imageArray.length;
 function image(num) {
   if (num == 1) {
