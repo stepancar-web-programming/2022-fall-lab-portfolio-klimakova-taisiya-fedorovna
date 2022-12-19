@@ -13,25 +13,18 @@ const imageArray = [
 
   const imageCount = imageArray.length;
   function flipPictures(isForwardDirection) {
-    if (isForwardDirection) {
-      if (currentImageIndex < imageCount - 1) {
-        currentImageIndex++;
-        document.getElementById('images').src = imageArray[currentImageIndex];
-        document.getElementById('imgNumber').innerHTML = `${currentImageIndex + 1}/${imageCount}`;
-      }
-    } else if (currentImageIndex > 0) {
-      currentImageIndex--;
-      document.getElementById('images').src = imageArray[currentImageIndex];
-      document.getElementById('imgNumber').innerHTML = `${currentImageIndex + 1}/${imageCount}`;
-    }
+    currentImageIndex = isForwardDirection ? (currentImageIndex + 1) : (currentImageIndex - 1);
+    currentImageIndex = currentImageIndex < 0 ? 0 : Math.min(currentImageIndex, imageCount - 1); 
+    document.getElementById('images').src = imageArray[currentImageIndex];
+    document.getElementById('imgNumber').innerHTML = `${currentImageIndex + 1}/${imageCount}`;
   }
   document.write(`<img id="images" src="${imageArray[0]}">`);
 
   function ready() {
     const previousPictureArrow = document.getElementById('previousPicture');
     const nextPictureArrow = document.getElementById('nextPicture');
-    previousPictureArrow.addEventListener("click", () => flipPictures(0));
-    nextPictureArrow.addEventListener("click", () => flipPictures(1));
+    previousPictureArrow.addEventListener("click", () => flipPictures(false));
+    nextPictureArrow.addEventListener("click", () => flipPictures(true));
   }
   document.addEventListener("DOMContentLoaded", ready);
 }());
